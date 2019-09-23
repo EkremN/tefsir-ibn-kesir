@@ -8,6 +8,10 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
 
     <title>Poziv na pretpaltu</title>
     <!-- alertify -->
@@ -68,7 +72,7 @@
                 <header>
                     <h1>Rezervišite vaš primjerak odmah!</h1>
                 </header>
-                <form id="contact-form">
+                <form id="contact-form" action="https://formspree.io/elkelimeh.bosna@gmail.com" method="POST">
                     <div class="full-name">
                         <input placeholder="Ime" type="text" name="name" id="name">
                         <input placeholder="Prezime" type="text" name="surname" id="surname">
@@ -76,7 +80,7 @@
                     <input placeholder="E-mail adresa" type="email" name="email" id="email">
                     <div>
                         <div class="icon"><i class="fas fa-thumbtack"></i></div><input placeholder="Adresa" type="text"
-                            name="adress" id="adress">
+                            name="address" id="address">
                     </div>
                     <div>
                         <div class="icon"><i class="fas fa-city"></i></div><input placeholder="Grad" type="text"
@@ -89,7 +93,7 @@
                     <div >
                       <div>
                           <div class="icon"><i class="fas fa-phone"></i></div>
-                          <input placeholder="Broj telefona" type="number" name="phone_number">
+                          <input placeholder="Broj telefona" type="number" name="phone_number" id="phone_number">
                       </div>
                     </div>
                     <button class="btn">Potvrdi</button>
