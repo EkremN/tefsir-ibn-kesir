@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <title>Poziv na pretpaltu</title>
+    <!-- alertify -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/alertify.min.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/themes/default.min.css" />
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/alertify.min.js"></script>
+    <!-- emailjs -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_tZ8N8uIYRReJiWDpg5YvU");
+        })();
+    </script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <section class="container">
+        <div class="first-grid-container">
+            <div class="img-holder">
+                <img src="img/komple.png" alt="">
+            </div>
+            <div class="bio">
+                <h3>Poziv na pretplatu </h3>
+                <h1>Tefsir Ibn Kesira</h1>
+                <div class="price">
+                    <span>200KM</span>
+                    <span>120KM</span>
+                </div>
+                <p>
+                    El-Kelimeh vas poziva da se pretplatite na komplet <i>Tefsir ibn Kesira</i>,
+                    koji se smatra najljepšim, najboljim i najpreciznijim tefsirom ikada napisanim.
+                    Verzija koja je pred vama oslobođena je od komlikovanih detalja,
+                    približna razumjevanju svih čitalaca,
+                    raspoređena je u pet tomova vrhunskog dizajna i kvaliteta,
+                    na oko 3.000 stranica B5 formata tvrdog uveza sa platnom.
+                </p>
+                <span class="important-info">Za sve informacije i za sva pitanja obratit nam se na broj telefona,
+                    pozivom ili porukom preko Vibera i Whatsappa ili direktno</span>
+                <div class="ico-holder">
+                    <div class="ico">
+                        <i class="fas fa-truck-moving"></i>
+                        <div class="ico-description">Plati pri uzeću</div>
+                    </div>
+                    <div class="ico">
+                        <i class="fas fa-phone"></i>
+                        <div class="ico-description">+387 603 552 749 </div>
+                    </div>
+                    <div class="ico">
+                        <i class="fas fa-envelope"></i>
+                        <div class="ico-description">elkelimeh.bosna@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-grid-container">
+            <div class="subscribe-section">
+                <header>
+                    <h1>Rezervišite vaš primjerak odmah!</h1>
+                </header>
+                <form id="contact-form">
+                    <div class="full-name">
+                        <input placeholder="Ime" type="text" name="name" id="name">
+                        <input placeholder="Prezime" type="text" name="surname" id="surname">
+                    </div>
+                    <input placeholder="E-mail adresa" type="email" name="email" id="email">
+                    <div>
+                        <div class="icon"><i class="fas fa-thumbtack"></i></div><input placeholder="Adresa" type="text"
+                            name="adress" id="adress">
+                    </div>
+                    <div>
+                        <div class="icon"><i class="fas fa-city"></i></div><input placeholder="Grad" type="text"
+                            name="city" id="city">
+                    </div>
+                    <div>
+                        <div class="icon"><i class="fas fa-globe-americas"></i></div><input placeholder="Zemlja"
+                            type="text" name="country" id="country">
+                    </div>
+                    <div class="phone-number">
+                        <input class="number-prefix" placeholder="+387" type="number" name="phone_prefics"
+                            id="phone_prefics">
+                        <div>
+                            <div class="icon"><i class="fas fa-phone"></i></div><input placeholder="Broj telefona"
+                                type="number" name="phone_number" id="phone_number">
+                        </div>
+                    </div>
+                    <button class="btn">Potvrdi</button>
+                </form>
+            </div>
+            <div class="img-holder">
+                <img src="img/Prvi-tom.png" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="script.js"></script>
+
+</html>
