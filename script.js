@@ -3,8 +3,8 @@ const notification = document.getElementById("notification")
 const form = document.getElementById("contact-form")
 let formInput;
 
-form.addEventListener("submit", () => {
-
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
     inputs.forEach(input => {
 
         if (input.value == "") {
@@ -18,10 +18,10 @@ form.addEventListener("submit", () => {
     })
 
     if (formInput) {
-        alertify.success("Message sent")
+        alertify.success("Pretplata poslana, hvala na povjerenju")
         inputs.forEach(input => input.value = "")
         sendMesage()
     } else {
-        alertify.error("Please check your entries");
+        alertify.error("Molimo vas provjerite prijavu");
     }
 })
