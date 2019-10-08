@@ -51,7 +51,7 @@ body {
     padding: 100px 10px;
 }
 
-.bio.no-padding {
+#bio {
   padding: 0 10px;
 }
 
